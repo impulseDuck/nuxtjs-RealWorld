@@ -1,0 +1,46 @@
+[
+  {
+    "name": "",
+    "path": "/",
+    "component": "/Users/dorazhao/Desktop/learn-lg/test/nuxtjs-RealWorld/pages/layout",
+    "children": [
+      {
+        "name": "home",
+        "path": "",
+        "component": "/Users/dorazhao/Desktop/learn-lg/test/nuxtjs-RealWorld/pages/home",
+        "_name": "_260629a8"
+      },
+      {
+        "name": "login",
+        "path": "/login",
+        "component": "/Users/dorazhao/Desktop/learn-lg/test/nuxtjs-RealWorld/pages/login",
+        "_name": "_ca115880"
+      },
+      {
+        "name": "register",
+        "path": "/register",
+        "component": "/Users/dorazhao/Desktop/learn-lg/test/nuxtjs-RealWorld/pages/login",
+        "_name": "_ca115880"
+      },
+      {
+        "name": "settings",
+        "path": "/settings",
+        "component": "/Users/dorazhao/Desktop/learn-lg/test/nuxtjs-RealWorld/pages/settings",
+        "_name": "_70ae646c"
+      },
+      {
+        "name": "profile",
+        "path": "/profile/:username",
+        "component": "/Users/dorazhao/Desktop/learn-lg/test/nuxtjs-RealWorld/pages/profile",
+        "_name": "_d8cf9780"
+      },
+      {
+        "name": "article",
+        "path": "/article/:slug",
+        "component": "/Users/dorazhao/Desktop/learn-lg/test/nuxtjs-RealWorld/pages/article",
+        "_name": "_7a62778d"
+      }
+    ],
+    "_name": "_7993bc9a"
+  }
+]
