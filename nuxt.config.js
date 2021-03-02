@@ -1,6 +1,7 @@
 // nuxt.config 路由配置表
 module.exports =  {
   router: {
+    linkActiveClass: 'active',
     extendRoutes(routes, resolve){
       // console.log(routes, 1);
       routes.splice(0) //清除routes
@@ -39,12 +40,22 @@ module.exports =  {
               name: 'article',
               path: '/article/:slug',
               component: resolve( __dirname, 'pages/article/')
+            },
+            {
+              name: 'editor',
+              path: '/editor',
+              component: resolve( __dirname, 'pages/editor/')
             }
           ]
         }
       ])
       
     }
-  }
+  },
+  // 注册插件
+  plugins: [
+    '~/plugins/request.js',
+    '~/plugins/dayjs.js'
+  ]
 }
 

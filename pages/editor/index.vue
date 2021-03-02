@@ -50,6 +50,8 @@
 
 <script>
 export default {
+  // 中间件，当用户没有登录的时候，跳转到登录页面
+  middleware: 'authenticated',
   name: "editorIndex",
 };
 </script>

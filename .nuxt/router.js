@@ -10,6 +10,7 @@ const _ca115880 = () => interopDefault(import('../pages/login' /* webpackChunkNa
 const _70ae646c = () => interopDefault(import('../pages/settings' /* webpackChunkName: "" */))
 const _d8cf9780 = () => interopDefault(import('../pages/profile' /* webpackChunkName: "" */))
 const _7a62778d = () => interopDefault(import('../pages/article' /* webpackChunkName: "" */))
+const _91317014 = () => interopDefault(import('../pages/editor' /* webpackChunkName: "" */))
 
 const emptyFn = () => {}
 
@@ -18,7 +19,7 @@ Vue.use(Router)
 export const routerOptions = {
   mode: 'history',
   base: '/',
-  linkActiveClass: 'nuxt-link-active',
+  linkActiveClass: 'active',
   linkExactActiveClass: 'nuxt-link-exact-active',
   scrollBehavior,
 
@@ -49,6 +50,10 @@ export const routerOptions = {
       path: "/article/:slug",
       component: _7a62778d,
       name: "article"
+    }, {
+      path: "/editor",
+      component: _91317014,
+      name: "editor"
     }]
   }],
 

@@ -7,21 +7,37 @@
         <ul class="nav navbar-nav pull-xs-right">
           <li class="nav-item">
             <!-- Add "active" class when you're on that page" -->
-            <a class="nav-link active" href="">Home</a>
+            <nuxt-link class="nav-link" to="/" exact="">Home</nuxt-link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">
+          <template v-if="user">
+            <li class="nav-item">
+            <nuxt-link class="nav-link" to="/editor">
               <i class="ion-compose"></i>&nbsp;New Post
-            </a>
+            </nuxt-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">
+            <nuxt-link class="nav-link" to="/settings">
               <i class="ion-gear-a"></i>&nbsp;Settings
-            </a>
+            </nuxt-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Sign up</a>
+            <nuxt-link class="nav-link ng-binding"  to="/profile/123">
+            <img ng-src="" class="user-pic">
+            impulseduck
+            </nuxt-link>
           </li>
+          </template>
+          <template v-else>
+            <li class="nav-item">
+            <nuxt-link class="nav-link" to="/login">Sign in</nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link class="nav-link" to="/register">Sign up</nuxt-link>
+          </li>
+          </template>
+          
+          
+         
         </ul>
       </div>
     </nav>
@@ -40,9 +56,20 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   name: "layoutIndex",
-  components: {},
+  data () {
+    return {
+
+    }
+  },
+  computed: {
+    ...mapState(['user'])
+  },
+  components: {
+
+  },
 };
 </script>
 
