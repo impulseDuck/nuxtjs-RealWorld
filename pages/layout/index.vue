@@ -21,7 +21,7 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link ng-binding"  to="/profile/123">
+            <nuxt-link class="nav-link ng-binding"  to="/profile/impulseduck">
             <img ng-src="" class="user-pic">
             impulseduck
             </nuxt-link>
